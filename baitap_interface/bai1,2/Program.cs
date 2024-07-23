@@ -92,7 +92,6 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.OutputEncoding = UTF32Encoding.UTF8;
-        HinhVuong hv = new HinhVuong(7);
         HinhChuNhat hcn = new HinhChuNhat(10,5);
         hcn.TinhDienTich();
         Console.WriteLine(hcn.dientich);
@@ -101,7 +100,7 @@ internal class Program
         ht.TinhDienTich();
         Console.WriteLine(ht.dientich);
 
-
+        HinhVuong hv = new HinhVuong(7);
         hv.TinhDienTich();
         Console.WriteLine(hv.dientich);
         hv.SoSanhDienTich(hv);
